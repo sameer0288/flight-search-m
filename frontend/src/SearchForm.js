@@ -10,7 +10,7 @@ const SearchForm = ({ setResults }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('http://localhost:5000/search', {
+            const response = await axios.post('https://flight-search-backend.vercel.app/search', {
                 origin,
                 destination,
                 cabinSelection: cabin
